@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Remove () {
+            contacts.pop();
+            document.getElementById("list").innerHTML=contacts;
+        }
+
+        function Add () {
+            if (length <= 7) {
+                contacts.push(document.getElementById("newcontact"));
+            }
+        }
+        var contacts;
+        var length = contacts.length;
+
+        
+    </script>
+    <fieldset>
+        <input type="text" id="newcontact"></input>
+    </fieldset>
+    <button onclick="Add()">Add</button>
+    <button onclick="Remove()">Remove</button><br>
+    <p class="list"></p>
+</body>
+</html>
